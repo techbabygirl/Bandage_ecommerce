@@ -1,0 +1,29 @@
+@import './variables.css';
+
+.breadcrumbs{
+    background: var(--shady-white);
+    padding: 2rem 0;
+    
+}
+
+.breadcrumbs .con{
+    display: flex;
+    width: var(--width);
+    margin: auto;
+    align-items: center;
+    max-width: var(--max-width);
+    gap: .7rem;
+}
+
+.breadcrumbs .con img{
+    width: 8.6px;
+    height: 10px;
+}
+
+.breadcrumbs .curr-page{
+    color: var(--light-gray);
+}
+
+.breadcrumbs .con p{
+    font-size: 13px;
+}

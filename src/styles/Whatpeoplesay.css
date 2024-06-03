@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.whatpeoplesay{
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    /* background-color: green; */
+  
+}
+.whatpeoplesay .rating{
+    text-align: center;
+    margin-top: 2rem;
+    /* padding: 2rem; */
+   
+
+}
+.whatpeoplesay .people{
+    /* display: flex; */
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.whatpeoplesay .reviews{
+line-height: 2rem;
+margin-top: 2rem;
+
+}
+.whatpeoplesay.reviewnote{
+    line-height: 1px;
+
+}
+.whatpeoplesay .name{
+    color: aqua;
+    font-weight: bold;
+ 
+}
+.whatpeoplesay .designer{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 766px) {
+    .whatpeoplesay{
+        display: block;
+        /* flex-direction: column; */
+    }
+
+    .whatpeoplesay .people{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 3rem;
+    }
+}

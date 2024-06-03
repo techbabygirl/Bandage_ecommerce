@@ -1,0 +1,131 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.funihighlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0;
+    width: 95vw;
+    max-width: var(--max-width);
+    margin: 3rem auto;
+    max-height: 450px;
+    gap: .5rem;
+}
+
+.funiLeft,
+.funiRight {
+    height: 450px;
+    max-height: 450px;
+}
+
+
+
+.funihighlight img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.funiRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.funiRight>* {
+    height: 50%;
+}
+
+.funiLeft img {
+    height: inherit !important;
+    object-fit: cover;
+}
+
+.funiRightBottom {
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.funihighlight .grid-item {
+    text-align: center;
+}
+
+.overlay-text h5 {
+    color: green;
+}
+
+.overlay-text h4 {
+    font-weight: bold;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.grid-item.one {
+    background: url(../assets/cardcover5_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item.two {
+    background: url(../assets/floweverse_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.grid-item.three {
+    background: url(../assets/cardcover6_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.grid-item.four {
+    background: url(../assets/cardcover_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.grid-item {
+    position: relative;
+    padding: 2rem 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .funihighlight {
+        grid-template-columns: repeat(1, 1fr);
+        max-height: fit-content;
+    }
+    .funiLeft, .grid-item.four, .grid-item.three{
+        height: 200px;
+       max-height: 200px;
+    }
+
+    .funiRightBottom{
+        flex-direction: column;
+    }
+
+    .grid-item.three, .grid-item.four{
+        width: 100%  !important;
+        height: 200px !important;
+        min-height: 200px !important;
+    }
+
+    
+}

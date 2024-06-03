@@ -1,0 +1,22 @@
+:root {
+    /* COLORS */
+    --green: #23856D;
+    --sky-blue: #23A6F0;
+    --dark-blue: #252B42;
+    --dim-gray: #737373;
+    --light-gray: #BDBDBD;
+    --shady-white: #FAFAFA;
+    --red: #E74040;
+
+
+    /* FONTS  */
+    --primary-text: 14px;
+    --medium-text: 24px;
+    --lg-text: 30px;
+    --bandageweight: bold;
+
+    /* BOX MODELS */
+    --width: 90vw;
+    --min-width: 95vw;
+    --max-width: 1000px;
+}

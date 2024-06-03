@@ -1,0 +1,224 @@
+@import './variables.css';
+/* FIRST NAV BAR  */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.contactinfo {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.contactinfo>* {
+    column-gap: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .firstnav .text {
+        display: none;
+    }
+}
+
+.socials {
+    padding: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.socials p {
+    margin-right: 0.5rem;
+}
+
+.socialimg {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialimg>* {
+    display: flex;
+    align-items: center;
+}
+
+.firstnav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--green);
+    font-size: var(--primary-text);
+}
+
+.firstnav>* {
+    flex-wrap: wrap;
+    color: #fff;
+    align-items: center;
+    gap: .5rem 1rem;
+}
+
+/* MOBILE SCREEN */
+
+@media screen and (max-width: 500px) {
+    .firstnav {
+        display: none;
+    }
+}
+
+/* 
+===================
+===================
+SECONDNAV
+===================
+===================
+ */
+
+.secondnav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    /* width: 97vw; */
+    margin: auto;
+    font-size: var(--primary-text);
+    padding: 0.8rem 3vw;
+    column-gap: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.secondnav .bandage {
+    font-size: var(--medium-text);
+    font-weight: bold;
+    color: #ccc;
+}
+
+.secondnav .navinfos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: .3rem 2rem;
+}
+
+.secondnav .navcontent {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .secondnav .navcontent {
+        display: none;
+    }
+    .secondnav .navinfos {
+        width: fit-content;
+    }
+}
+
+.secondnav .navicons {
+    display: flex;
+    gap: 1rem;
+    color: var(--sky-blue);
+}
+
+.secondnav .navicons a{
+    display: flex;
+    color: var(--sky-blue);
+    gap: .3rem;
+}
+
+.secondnav .navicons>* {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.secondnav .navicons img {
+    height: 1rem;
+    width: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .secondnav .navicons>*:nth-child(1) {
+        display: none;
+    }
+    .secondnav .navicons {
+        width: fit-content;
+    }
+}
+
+/* MOBILE SCREEN */
+
+.mobileNav {
+    display: none;
+}
+
+.mobileveiw {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileveiw .bandage {
+    font-size: var(--medium-text);
+    font-weight: bold;
+    
+}
+
+.bandage a{
+    color: var(--dark-blue);
+}
+
+.mobileveiw .nav-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.mobileveiw .menuicon {
+    display: block;
+    cursor: pointer;
+}
+
+.menudropdowm {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: var(--medium-text);
+    margin-bottom: 1rem;
+}
+
+.menudropdowm p {
+    /* margin-left: 12rem; */
+    padding: 0.5rem;
+}
+
+/* MOBILE SCREEN */
+
+@media screen and (max-width: 480px) {
+    .secondnav {
+        display: none;
+    }
+    .mobileNav {
+        display: block;
+    }
+}
+
+/* 
+===================
+===================
+END OF SECONDNAV
+===================
+===================
+ */
